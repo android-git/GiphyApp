@@ -113,11 +113,13 @@ public class VideoPlayerController extends BaseController implements ExoPlayer.E
 
     @OnClick(R.id.btnShare)
     void onShareButtonClick() {
-        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
-        sharingIntent.setType("video/*");
-        sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Video Share");
-        sharingIntent.putExtra(android.content.Intent.EXTRA_STREAM, giphyImageInfo.getVideoUrl());
-        startActivity(Intent.createChooser(sharingIntent, "share:"));
+        Intent share = new Intent(android.content.Intent.ACTION_SEND);
+        share.setType("text/plain");
+        share.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+        share.putExtra(Intent.EXTRA_SUBJECT, "Giphy Video");
+        share.putExtra(Intent.EXTRA_TEXT, giphyImageInfo.getVideoUrl());
+
+        startActivity(Intent.createChooser(share, "Share link!"));
     }
 
     @Override

@@ -69,6 +69,7 @@ public class MainController extends BaseController implements GiphyListView, Swi
     private Box<GiphyImageInfo> giphyImageInfoBox;
     private Query<GiphyImageInfo> giphyImageInfoQuery;
     MenuItem searchMenuItem;
+
     public MainController() {
         setHasOptionsMenu(true);
     }
@@ -201,7 +202,7 @@ public class MainController extends BaseController implements GiphyListView, Swi
 
         searchMenuItem = menu.findItem(R.id.menu_search);
 
-       SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchMenuItem);
         searchView.setQueryHint(searchGifs);
 
         // Set contextual action on search icon click
