@@ -35,5 +35,5 @@ http://jakewharton.github.io/butterknife/
 <p align="center">
 <img src="https://github.com/android-git/GiphyApp/blob/master/Screenshot_20170726-202005.png" width="250"/>
 <img src="https://github.com/android-git/GiphyApp/blob/master/Screenshot_20170726-202458.png" width="250"/>
-<img src="https://github.com/frontend-git/ReactNative/blob/master/AwesomeProject/AwesomeProject/Screenshot_20170215-133842.png" width="250"/>
+<img src="https://github.com/android-git/GiphyApp/blob/master/Screenshot_20170726-202505.png" width="250"/>
 </p>
